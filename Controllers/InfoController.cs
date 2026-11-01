@@ -15,7 +15,7 @@ namespace PersonalProfileApp.Controllers
             Skills = new() { "C#", "ASP.NET Core MVC", "HTML / CSS", "JavaScript", "Bootstrap", "Git / GitHub", "SQL негіздері" },
             Email = "akerke250407@gmail.com",
             Phone = "+7 (___) ___-__-__",
-            GitHub = "https://github.com/AGERUSHA",
+            GitHub = "https://github.com/agerusha",
             Projects = new()
             {
                 new() { Title = "PersonalProfileApp", Description = "ASP.NET Core MVC негізіндегі жеке ақпараттық визитка.", Technologies = "C#, ASP.NET Core MVC, Bootstrap" },
