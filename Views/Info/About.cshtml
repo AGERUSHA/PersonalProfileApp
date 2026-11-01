@@ -1,0 +1,28 @@
+@model PersonalProfileApp.Models.StudentProfile
+@{
+    ViewData["Title"] = "Мен туралы";
+}
+
+<h2>Мен туралы</h2>
+<p>@Model.Bio</p>
+
+<table class="table w-auto">
+    <tr><th>Аты-жөні</th><td>@Model.FullName</td></tr>
+    <tr><th>Оқу орны</th><td>@Model.University</td></tr>
+    <tr><th>Тобы</th><td>@Model.Group</td></tr>
+</table>
+
+<h4>Дағдыларым</h4>
+<div class="mb-3">
+    @foreach (var skill in Model.Skills)
+    {
+        <span class="badge bg-primary me-1 mb-1 p-2">@skill</span>
+    }
+</div>
+
+<h4>Байланыс ақпараттары</h4>
+<ul>
+    <li>Email: <a href="mailto:@Model.Email">@Model.Email</a></li>
+    <li>Телефон: @Model.Phone</li>
+    <li>GitHub: <a href="@Model.GitHub" target="_blank">@Model.GitHub</a></li>
+</ul>

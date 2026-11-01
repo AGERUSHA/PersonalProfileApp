@@ -1,0 +1,25 @@
+@model PersonalProfileApp.Models.StudentProfile
+@{
+    ViewData["Title"] = "Басты бет";
+}
+
+<div class="text-center py-4">
+    <h1 class="display-5">@Model.FullName</h1>
+    <p class="lead">@ViewBag.Message</p>
+    <p class="text-muted">@Model.University · @Model.Group</p>
+</div>
+
+<div class="card mx-auto" style="max-width: 600px;">
+    <div class="card-body">
+        <h5 class="card-title">Қысқаша мәлімет</h5>
+        <p class="card-text">@Model.Bio</p>
+        <h6>Байланыс</h6>
+        <ul class="list-unstyled mb-3">
+            <li>Email: <a href="mailto:@Model.Email">@Model.Email</a></li>
+            <li>Телефон: @Model.Phone</li>
+            <li>GitHub: <a href="@Model.GitHub" target="_blank">@Model.GitHub</a></li>
+        </ul>
+        <a class="btn btn-primary" asp-action="About">Мен туралы</a>
+        <a class="btn btn-outline-primary" asp-action="Portfolio">Портфолио</a>
+    </div>
+</div>
