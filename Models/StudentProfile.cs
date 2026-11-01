@@ -5,6 +5,8 @@ namespace PersonalProfileApp.Models
     {
         public string FullName { get; set; } = "";
         public string Group { get; set; } = "";
+        public string University { get; set; } = "";
+        public string Course { get; set; } = "";
         public string Bio { get; set; } = "";
         public List<string> Skills { get; set; } = new();
         public string Email { get; set; } = "";
