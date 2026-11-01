@@ -9,12 +9,9 @@ namespace PersonalProfileApp.Controllers
         private static readonly StudentProfile Profile = new()
         {
             FullName = "Акерке",
-            Group = "Топ: ______",
-            University = "Университет: ______",
             Bio = "Мен веб-бағдарламалауды үйреніп жүрген студентпін. ASP.NET Core MVC арқылы заманауи веб-қосымшалар жасауға қызығамын.",
             Skills = new() { "C#", "ASP.NET Core MVC", "HTML / CSS", "JavaScript", "Bootstrap", "Git / GitHub", "SQL негіздері" },
             Email = "akerke250407@gmail.com",
-            Phone = "+7 (___) ___-__-__",
             GitHub = "https://github.com/agerusha",
             Projects = new()
             {
